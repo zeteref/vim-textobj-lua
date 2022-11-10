@@ -25,6 +25,7 @@ try:
     vim.command("let pos = ['v', %s, %s]" % (start_pos_str, end_pos_str))
 except:
     vim.command("let pos = 0")
+    raise
 EOF
     return pos
 endfunction
